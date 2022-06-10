@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <!-- material icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+    <!-- montserrat font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+
+    <!-- iconscout cdn  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#"><h3>AMIR</h3></a>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#skills">Skills</a></li> -->
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="./images/Amir-Hossain-Web-Developer.pdf" download><i class="uil uil-import"></i>Resume</a></li>
+            </ul>
+            <button id="menu-btn"><span class="material-icons-sharp" >menu</span></button>
+            <button id="close-btn"><span class="material-icons-sharp" >close</span></button>
+        </div>
+    </nav>
+    <!-- ----------------------------end of navbar-------------------------------- -->
+
+    <section class="landing">
+        <div class="container">
+            <div class="socials">
+                <a href="https://web.facebook.com/profile.php?id=100008186373521" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                <a href="https://github.com/amir-hossain113" target="_blank"><i class="uil uil-github"></i></a>
+                <a href="linkedin.com/in/md-amir-hossain-bb0b451a5" target="_blank"><i class="uil uil-linkedin"></i></a>
+            </div>
+            <div class="info">
+                <h1>Junior Front End Developer</h1>
+                <h3>Hi, I'm <span class="name">Amir Hossain</span></h3>
+                <p>I am a front-end developer. I have done many projects.</p>
+                <a href="#contact" class="btn btn-primary">Let's Talk</a>
+            </div>
+            <div class="profile-area">
+                <div class="outer-circle">
+                    <span class="material-icons-sharp">design_services</span>
+                    <span class="material-icons-sharp">grid_view</span>
+                    <span class="material-icons-sharp">view_agenda</span>
+                    <span class="material-icons-sharp">view_carousel</span>
+                </div>
+                <div class="inner-circle">
+                    <img src="./images/Passport.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------end of loading------------------------  -->
+
+    <section class="about" id="about">
+        <h1>About</h1>
+        <div class="container">
+            <div class="image">
+                <img src="./images/Amir.jpg" alt="">
+            </div>
+            <div class="info">
+                <p>
+                    Hello, I'm Amir Hossain. I have completed my graduation from the department of Computer Science & Engineering from Metropolitan University. I wanted to be a web developer. Because it was my dream. After too much hard-work now I I am a web developer. I worked hard to develop my skills on different type of programming languages, frameworks & database. To reach my goal I have to practice more & more. Because practice makes a man perfect. And it works to me.
+                </p>
+                
+                <!-- <a class="read-more">Show more</a> -->
+                <a href="./images/Amir-Hossain-Web-Developer.pdf" download class="btn btn-primary"><i class="uil uil-import"></i>Download Resume</a>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------about end-------------------  -->
+
+    <!-- <section class="skills" id="skills">
+        <h1>Skills</h1>
+        <div class="container">
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">design_services</span>
+                        <h4>UI/UX Design</h4>
+                    </div>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <h5>Figma</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>20%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>Photoshop</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">code</span>
+                        <h4>Frontend Development</h4>
+                    </div>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+
+                <div class="items">
+                    <div class="item second-item">
+                        <h5>HTML5</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>80%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>CSS3</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>70%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>JavaScript</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>60%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>React</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>50%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>Bootstrap</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>85%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>Tailwind</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>65%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">component_exchange</span>
+                        <h4>Backend Development</h4>
+                    </div>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+
+                <div class="items">
+                    <div class="item">
+                        <h5>Node</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>Express</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>30%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>MongoDb</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>40%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- ---------------------end of skills----------------------  -->
+
+    <!-- <section class="services">
+
+    </section> -->
+    <!-- --------------------end of service----------------------  -->
+
+    <section class="recent-work" id="portfolio">
+        <h1>Projects</h1>
+        <div class="container">
+            <h4>My recent work</h4>
+            <h2>Here are some of my recent projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="./images/computer1.png" alt="">
+                    </div>
+                    <h3>Complete Responsive Computer Parts Manufacturer Website</h3>
+                    <p>
+                        This is a computer parts manufacturer website where any user can see six parts in the home page, user also can see blogs page & portfolio page. If user wants to see more parts then user need to registration & login to this website. After registration/login user can see more options like manage products, dashboard page, in dashboard user can see his/her order, profile, and user can add review. Admin can make another user to admin and many more.<br>
+                        <b>Features:</b> <br>
+                        <span>⦿ Admin & user authentication.</span><br>
+                        <span>⦿ User can add product, order product, cancel order, add review, add payment, update profile.</span><br>
+                        <span>⦿ Admin can make another user to admin, manage product & user, update profile.</span><br>
+                        <b>Technologies:</b> React.js, node.js, mongodb, firebase, tailwind css, daisy UI, react-hook-form, react-router,react query, heroku,stripe.
+                    </p>
+                    <div class="action">
+                        <a href="https://github.com/amir-hossain113/computer-parts-manufacturer-client.git" target="_blank">Github Client</a>
+                        <a href="https://github.com/amir-hossain113/computer-parts-manufacturer-server.git" target="_blank">Github Server</a>
+                        <a href="https://computer-parts-manufactu-6e922.web.app" target="_blank">Live Site</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="./images/fruits1.png" alt="">
+                    </div>
+                    <h3>Complete Responsive Fruits Warehouse Website</h3>
+                    <p>
+                        This is a fruits warehouse website where any user can see six fruits item in the home page, user also can see blog page & about page. If user wants to see more fruit items then user need to registration & login to this website. After registration/login user can see more options like manage inventory page , add item page, my item page and logout. User can update any product quantity, user can add new product, user can delete any product. <br>
+                        <b>Features:</b> <br>
+                        <span>⦿ User authentication system.</span><br>
+                        <span>⦿ User can add product, update product quantity, delete product.</span><br>
+                        <span>⦿ User can read blogs, can see website owner info.</span><br>
+                        <b>Technologies:</b> React.js, node.js, mongodb, firebase, bootstrap, react-router, react-hook-form.
+                    </p>
+
+                    <div class="action">
+                        <a href="https://github.com/amir-hossain113/fruits-warehouse-client.git" target="_blank">Github Client</a>
+                        <a href="https://github.com/amir-hossain113/fruits-warehouse-server.git" target="_blank">Github Server</a>
+                        <a href="https://fruits-warehouse-b2603.web.app/" target="_blank">Live Site</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="./images/photograps1.png" alt="">
+                    </div>
+                    <h3>Wild Photography Responsive Website</h3>
+                    <p>
+                        This is wild photography website. Here user must have registered to purchase any photos. User can explore many features from this website. <br>
+                        <b>Features:</b> <br>
+                        <span>⦿ User authentication system.</span><br>
+                        <span>⦿ User can select any product to buy.</span><br>
+                        <span>⦿ User can read blogs, can see website owner info.</span><br>
+                        <b>Technologies:</b> React.js, react-router, firebase, netlify, bootstrap.
+                    </p>
+                    <div class="action">
+                        <a href="https://github.com/amir-hossain113/wild-photography.git" target="_blank">Github Link</a>
+                        <a href="https://meek-bonbon-545df3.netlify.app/" target="_blank">Live Site</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="./images/laptop-review1.png" alt="">
+                    </div>
+                    <h3>Laptop Reviewer website</h3>
+                    <p>
+                        This is a simple laptop reviewer website created by react, where anyone can see all product from apple laptop store by clicking demo button. <br>
+                        <b>Features:</b><br>
+                        <span>⦿ Anyone can see demo product & description</span><br>
+                        <span>⦿ Anyone can see user reviews</span><br>
+                        <span>⦿ Anyone can read blogs & can see company's invest & revenue from charts</span><br>
+                        <b>Technologies:</b> React.js, react-router, bootstrap.
+                    </p>
+                    <div class="action">
+                        <a href="https://github.com/amir-hossain113/laptop-reviewer.git" target="_blank">Github Link</a>
+                        <a href="https://heroic-granita-cd0a71.netlify.app/" target="_blank">Live Site</a>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="./images/laptop-store1.png" alt="">
+                    </div>
+                    <h3>Laptop Store Website</h3>
+                    <p>
+                        This is a simple laptop store website. Here anyone can see laptops. Add laptop to the cart. Anyone can get better user experience.  <br>
+                        <b>Features:</b> <br>
+                        <span>⦿ Add to cart</span><br>
+                        <span>⦿ Can choose one laptop from cart</span><br>
+                        <span>⦿ Clear the cart & read blogs</span><br>
+                        <b>Technologies:</b> React.js, bootstrap.
+                    </p>
+                    <div class="action">
+                        <a href="https://github.com/amir-hossain113/laptop-store.git" target="_blank">Github Link</a>
+                        <a href="https://neon-praline-c11945.netlify.app/" target="_blank">Live Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------------------end of projects----------------------  -->
+
+    <!-- <section class="testimonial">
+
+    </section> -->
+
+    <section class="contact" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <h1>Let's talk</h1>
+                <p>
+                    If you want to know more about me or anything else feel free to contact with me.
+                </p>
+                <form action="https://formspree.io/f/mdobjdza" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------end of contact---------------------  -->
+
+    <footer>
+        <div class="container">
+            <a href="#"><h3>AMIR</h3></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#skills">Skills</a></li> -->
+                <!-- <li><a href="#services">Services</a></li> -->
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://web.facebook.com/profile.php?id=100008186373521" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                <a href="https://github.com/amir-hossain113" target="_blank"><i class="uil uil-github"></i></a>
+                <a href="linkedin.com/in/md-amir-hossain-bb0b451a5" target="_blank"><i class="uil uil-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; Amir Hossain
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
