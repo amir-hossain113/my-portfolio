@@ -373,39 +373,129 @@ section.skills .item:nth-child(2) .progress-bar .progress {
 /* ----------------------services---------------------- */
 
 
-/* ----------------------projects----------------------  */
-section.recent-work h2 {
-    text-align: left;
-    margin: 3rem 0 1rem;
-    width: 65%;
+/* ---------------------- project------------=====================================  */
+.section_title {
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+}
+.work_container {
+    display:grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 1.8rem;
+    justify-content: center;
+    padding-top: 1rem;
 }
 
-section.recent-work .projects {
+.work_card {
+    background-color:burlywood;
+    padding: 1.25rem;
+    border-radius: .5rem;
+}
+
+.portfolio_item-details {
+    display: none;
+}
+
+.work_img {
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.work_title {
+    font-size: 14px;
+}
+
+.work_button {
+    color:#791f58;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    cursor:pointer;
+}
+
+.work_button-icon {
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.work_button:hover {
+    color:olive;
+    transform: translateX(.25rem);
+}
+
+/* project popup---------------------------------------------- */
+.portfolio_popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    /* z-index: var(--z-modal); */
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.portfolio_popup.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio_popup-inner {
+    background-color:#8b8fa3;
+    width: 1200px;
+    border-radius: .5rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.portfolio_popup-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 3rem;
 }
 
-section.recent-work .projects .project {
+.portfolio_popup-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:red;
+}
+
+.portfolio_popup-img {
+    border-radius: .5rem;
+    height: 340px;
+}
+
+.details_title {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.details_info {
     display: flex;
-    flex-direction: column;
     gap: 2rem;
+    margin-top: 2rem;
 }
 
-
-section.recent-work .projects .project .action {
-    display: flex;
-    gap: 2rem;
-}
-
-section.recent-work .projects .project .action a {
+.details_info a {
     color: var(--color-white);
     background-color:#263062;
     padding: 10px;
     border-radius: 10px;
 }
 
-section.recent-work .projects .project .action a:hover {
+.details_info a:hover {
     background-color:khaki;
     color:#f24e1e;
 }
@@ -536,7 +626,7 @@ footer .copyright {
     margin-top: 5rem;
     padding: 2rem 0;
 }
-
+/* ---------------------------------------------------------- */
 /* -------------------------media query---------------------  */
 @media screen and (max-width: 600px) {
     h1 {
@@ -702,14 +792,49 @@ footer .copyright {
         grid-template-columns: 1fr;
     } */
 
-    /* portfolio section  */
-    section.recent-work .container .projects {
+    /* portfolio section  =============================================================*/
+    /* section.recent-work .container .projects {
         grid-template-columns: 1fr;
-    } 
+    }  */
 
     section.recent-work .container h2 {
         width: 94vw;
         margin: 1.4rem 0 1rem;
+    }
+
+    .section_title {
+        margin-left: 4rem;
+        font-size: 20px;
+    }
+    .work_container {
+        grid-template-columns: repeat(1, 330px);
+    }
+
+    .portfolio_popup {
+        overflow:scroll;
+        
+    }
+
+    .portfolio_popup-inner {
+        width: 420px;
+        padding: 40rem 1.5rem 2.5rem;
+    }
+
+    .portfolio_popup-content {
+        grid-template-columns: 1fr;
+        row-gap: 1.6rem;
+    }
+
+    .portfolio_popup-close {
+        top: 37.5rem;
+    }
+
+    .details_info a {
+        font-size: 12px;
+    }
+
+    .blogs-title {
+        font-size: 22px;
     }
 
     /* testimonial section  */
